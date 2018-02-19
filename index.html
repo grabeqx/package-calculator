@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    First commit
+    <div class="calculator-container">
+        <div class="top-c">
+            <div>
+                <h3>Cena wyjściowa</h3>
+                <p class="default-price">
+                    <input id="c-value-default" type="text" readonly>
+                </p>
+            </div>
+            <div>
+                <h3>Razem</h3>
+                <p class="custom-price">
+                    <input id="c-value" type="text" readonly>
+                </p>
+            </div>
+        </div>
+        <div class="calculator-content">
+            <form>
+                <section id="c-default">
+                    <h3>Strona www</h3>
+                    <div class="options"></div>
+                </section>
+                <section id="c-custom">
+                    <div class="options"></div>
+                </section>
+                <section id="c-other">
+                    <h3>Inne funkcjonalnosci</h3>
+                    <div class="options"></div>
+                </section>
+                <section id="c-modules">
+                    <h3>Implementacje modułów</h3>
+                    <div class="options"></div>
+                </section>
+                <section id="c-after">
+                    <h3>Po zakonczeniu zlecenia</h3>
+                    <div class="options"></div>
+                </section>
+                <section id="c-server">
+                    <h3>serwer/opieka techniczna </h3>
+                    <div class="options"></div>
+                </section>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

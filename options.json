@@ -1,18 +1,122 @@
 {
-    "value": "2000",
-    "website": {
-        "default": [
-            "System CMS",
-            "Indywidualny projekt graficzny",
-            "kodowanie",
-            "RWD Responsive design",
-            "Zmieniający się slider - 3 slidery",
-            "Formularz kontaktowy",
-            "Mapka dojazdu",
-            "Galeria/realizacje",
-            "Google Analistic - kontrola odwiedzin",
-            "Aktualności",
-            "Utworzenie 5 podstron i wypełnienie ich treścią"
+    "value": 2000,
+    "default": [
+        "System CMS",
+        "Indywidualny projekt graficzny",
+        "kodowanie",
+        "RWD Responsive design",
+        "Zmieniający się slider - 3 slidery",
+        "Formularz kontaktowy",
+        "Mapka dojazdu",
+        "Galeria/realizacje",
+        "Google Analistic - kontrola odwiedzin",
+        "Aktualności",
+        "Utworzenie 5 podstron i wypełnienie ich treścią"
+    ],
+    "options": {
+        "custom": [
+            {
+                "title": "Dodatowa podstrona z tręscia",
+                "type": "select",
+                "list": [1,2,3,4,5],
+                "price": 25,
+                "checked": false
+            },
+            {
+                "title": "Indywidualny projekt graficzny dodatkowej podstrony",
+                "type": "select",
+                "list": [1,2,3,4,5],
+                "price": 200,
+                "checked": false
+            },
+            {
+                "title": "Zdjęcia stockowe 5 sztuk",
+                "type": "select",
+                "list": [5,10,15,20],
+                "price": 75,
+                "checked": false
+            },
+            {
+                "title": "Dodatkowe wersje językowe",
+                "type": "select",
+                "list": [1,2,3,4,5],
+                "price": 300,
+                "checked": false
+            },
+            {
+                "title": "Optymalizacja SEO",
+                "type": "checkbox",
+                "price": 300,
+                "checked": false
+            },
+            {
+                "title": "Szyfrowanie SSL",
+                "type": "checkbox",
+                "price": 50,
+                "checked": false
+            }
+        ],
+        "other": [
+            {
+                "title": "NOWOŚĆ! Napisanie treści na stronę",
+                "type": "checkbox",
+                "price": 300,
+                "checked": false
+            },
+            {
+                "title": "Dodanie strony do google maps",
+                "type": "checkbox",
+                "price": 100,
+                "checked": true
+            },
+            {
+                "title": "Utworzenie profilu Facebook ",
+                "type": "checkbox",
+                "price": 100,
+                "checked": true
+            }
+        ],
+        "modules": [
+            {
+                "title": "Rozbudowany formularz np. zamówieniowy, rejestracyjny",
+                "type": "checkbox",
+                "price": 300,
+                "checked": false
+            },
+            {
+                "title": "Rozbudowany formularz kontaktowe",
+                "type": "checkbox",
+                "price": 300,
+                "checked": false
+            }
+        ],
+        "after": [
+            {
+                "title": "Instrukcja obsługi strony",
+                "type": "checkbox",
+                "price": 0,
+                "checked": true
+            },
+            {
+                "title": "Poradnik",
+                "type": "checkbox",
+                "price": 0,
+                "checked": true
+            }
+        ],
+        "server": [
+            {
+                "title": "Pojemność 5 GB ( 10 Gb , 20 Gb )",
+                "type": "checkbox",
+                "price": 60,
+                "checked": false
+            },
+            {
+                "title": "Domena pl, eu, com - rejestracja",
+                "type": "checkbox",
+                "price": 0,
+                "checked": true
+            }
         ]
     }
 }
