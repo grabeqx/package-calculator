@@ -1,3 +1,72 @@
+body { 
+    font-family: Lato, sans-serif;
+}
 .calculator-container {
     margin: 0px auto;
+    max-width: 1240px;
+    box-sizing: border-box;
+}
+.top-c {
+    display: flex;
+}
+.top-c p, .top-c h3 {
+    margin: 0px;
+    line-height: normal;
+    text-align: center;
+}
+.top-c > div {
+    width: 50%;
+    box-sizing: border-box;
+    color: #fff;
+}
+.top-c > div:first-of-type {
+    background: #1794a2;
+}
+.top-c > div:last-of-type {
+    background: #fcbe13;
+}
+.top-c input {
+    border: none;
+    width: 100%;
+    background: none;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.calculator-container section > h3 {
+    background: #84c2c9;
+    font-weight: 300;
+    font-size: 30px;
+    margin: 0px;
+    padding: 10px 0px;
+    text-align: center;
+    color: #fff;
+}
+#c-default ul {
+    line-height: normal;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+#c-default ul li {
+    display: flex;
+    margin: 5px;
+    background: #fdbe14;
+    padding: 15px 5px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-width: calc(33.3% - 20px);
+}
+.calculator-container  .option {
+    margin: 10px 0px;
+}
+.calculator-container label:not(.chackbox-label) {
+    margin-bottom: 5px;
+    display: block;
 }

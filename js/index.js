@@ -16,7 +16,16 @@
 
                 this.createDefaultOptions(this.data.default, document.querySelector('#c-default'));
                 this.createCustomOptions(this.data);
+                this.initSelecticPlugin();
             }.bind(this));
+        },
+
+        initSelecticPlugin: function () {
+            $('select').selectric({
+                onChange: function(element) {
+                    this.calculateValue(element.dataset.title, element.value, true);
+                  }.bind(this),
+            });
         },
 
         createDefaultOptions: function (data, parent) {
@@ -57,10 +66,7 @@
                     option.appendChild(document.createTextNode(el));
                     input.appendChild(option);
                 });
-
-                input.addEventListener('change', function () {
-                    this.calculateValue(data.title, input.value, true);
-                }.bind(this), false);
+                input.dataset.title = data.title;
 
                 optionContainer.appendChild(label);
                 optionContainer.appendChild(input);
@@ -75,7 +81,8 @@
                 input.addEventListener('click', function () {
                     this.calculateValue(data.title, input.value, input.checked);
                 }.bind(this), false);
-
+                
+                label.classList.add('chackbox-label');
                 label.appendChild(input);
                 optionContainer.appendChild(label);
             }
